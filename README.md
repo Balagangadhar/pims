@@ -30,6 +30,7 @@ pims includes many pratices/principles that are required during production. It a
 - Processing development and production time tasks like Minification, concatination etc using maven profiles
 - Authorization & Authentication(Using Spring security)
 - JPA using hibernate
+- Logging
 
 ##Usage
 
