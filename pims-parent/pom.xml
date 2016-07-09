@@ -8,6 +8,7 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>../pims-web</module>
+		<module>../pims-data</module>
 	</modules>
 
 	<profiles>
@@ -30,6 +31,13 @@
 
 	<dependencyManagement>
 		<dependencies>
+			<!-- pims dependencies -->
+			<dependency>
+				<groupId>com.comakeit.pims</groupId>
+				<artifactId>pims-data</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
 			<!-- Spring Dependencies -->
 			<dependency>
 				<groupId>org.springframework</groupId>
