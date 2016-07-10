@@ -4,10 +4,11 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>Personnel and Inventory Management System</title>
-	<jwr:style src="/app-all.min.css" />
-	<jwr:script src="/app-all.min.js" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Personnel and Inventory Management System</title>
+<jwr:style src="/css/app-all.min.css" />
+<jwr:script src="/js/app-all.min.js" />
+
 </head>
 
 <body>
