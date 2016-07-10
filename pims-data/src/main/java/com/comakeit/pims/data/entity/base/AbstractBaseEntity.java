@@ -14,6 +14,8 @@ import javax.persistence.TemporalType;
 
 import org.hibernate.annotations.GenericGenerator;
 
+import com.comakeit.pims.common.utils.ApplicationEntityConstant;
+
 @MappedSuperclass
 public abstract class AbstractBaseEntity implements Serializable {
 	/**
@@ -31,11 +33,11 @@ public abstract class AbstractBaseEntity implements Serializable {
 	protected String name;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	@Column(name = "CREATED_DATE")
+	@Column(name = ApplicationEntityConstant.Column.CREATEDDATE)
 	private Date createdDate;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	@Column(name = "UPDATED_DATE")
+	@Column(name = ApplicationEntityConstant.Column.UPDATEDDATE)
 	private Date updatedDate;
 
 	public String getName() {
