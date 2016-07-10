@@ -17,15 +17,19 @@ Personnel and Inventory Management Systetm(**pims**) is prototyping application 
 
 <div id='techstack'/>
 ## Technical Stack
-Following skills have been used to show-case their functionality and most of them are java & web related stuff. 
-- ExtJS 5+
-- Java 1.7+
-- Spring 4+
-- Hibernate(JPA) 4+
+Following skills have been used to show-case various functionality and most of them are java & web related stuff. 
+- ExtJS 5(MVC & MVVM)
+- Java 1.7
+- Spring 4
+- Spring Data JPA
+- Spring Security
+- Hibernate 5
+- Jawr
+- Git
 
 <div id='principles'/>
-## Practices/Principles included
-pims includes many pratices/principles that are required during production. It also includes the automation that has been done to make developer's life easy without explicit configuration. 
+## Practices/Principles adopted
+pims includes many pratices/principles required for an enterprise level production ready application. It also includes the automation that has been done to make developer's life easy without explicit configuration. Following are some of them.  
 - Project modulerization using Maven's pom inheritance
 - Processing development and production time tasks like Minification, concatination etc using maven profiles
 - Authorization & Authentication(Using Spring security)
@@ -33,7 +37,12 @@ pims includes many pratices/principles that are required during production. It a
 - Logging
 
 ##Usage
+For development environment
+~~~~
+mvn package 
+~~~~
 
-
-
-
+For production environment
+~~~~
+mvn package -Dnet.jawr.debug.on=false
+~~~~
