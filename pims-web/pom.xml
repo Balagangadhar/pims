@@ -14,23 +14,32 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.comakeit.pims</groupId>
+			<artifactId>pims-common</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.comakeit.pims</groupId>
+			<artifactId>pims-vo</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.comakeit.pims</groupId>
 			<artifactId>pims-data</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.comakeit.pims</groupId>
+			<artifactId>pims-service</artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-core</artifactId>
-			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-beans</artifactId>
-			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>

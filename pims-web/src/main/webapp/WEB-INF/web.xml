@@ -12,7 +12,7 @@
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
-			/WEB-INF/applicationContext-security.xml
+			classpath*:spring-context-pims-*.xml
 		</param-value>
 	</context-param>
 
@@ -22,7 +22,8 @@
 	</context-param>
 
 	<filter>
-		<filter-name>springSecurityFilterChain</filter-name>
+		<filter-name>springSecurityFilterChain
+		</filter-name>
 		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
 	</filter>
 

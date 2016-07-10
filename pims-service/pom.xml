@@ -7,34 +7,26 @@
 		<version>1.0-SNAPSHOT</version>
 		<relativePath>../pims-parent</relativePath>
 	</parent>
-	<artifactId>pims-data</artifactId>
-	<name>PIMS Data Module</name>
+	<artifactId>pims-service</artifactId>
+	<name>PIMS Service Module</name>
 
 	<dependencies>
 		<dependency>
 			<groupId>com.comakeit.pims</groupId>
 			<artifactId>pims-common</artifactId>
 		</dependency>
-		<!-- Spring Data JPA -->
 		<dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-jpa</artifactId>
+			<groupId>com.comakeit.pims</groupId>
+			<artifactId>pims-vo</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.comakeit.pims</groupId>
+			<artifactId>pims-data</artifactId>
 		</dependency>
 
-		<!-- Hibernate -->
 		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-core</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-entitymanager</artifactId>
-		</dependency>
-
-		<!-- Database -->
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
 		</dependency>
 	</dependencies>
 </project>

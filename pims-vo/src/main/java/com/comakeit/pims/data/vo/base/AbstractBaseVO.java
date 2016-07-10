@@ -1,10 +1,10 @@
-package com.comakeit.pims.data.dto.base;
+package com.comakeit.pims.data.vo.base;
 
 import java.io.Serializable;
 
 //@JsonInclude(Include.NON_EMPTY)
 //@JsonIgnoreProperties(ignoreUnknown = true)
-public abstract class AbstractBaseDTO implements Serializable {
+public abstract class AbstractBaseVO implements Serializable {
 
 	/**
 	 * 

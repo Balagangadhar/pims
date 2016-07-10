@@ -4,7 +4,16 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="pims-common-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pims-common/pims-common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pims-vo-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pims-vo/pims-vo">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <dependent-module archiveName="pims-data-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pims-data/pims-data">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="pims-service-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/pims-service/pims-service">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="java-output-path" value="/pims-web/target/classes"/>

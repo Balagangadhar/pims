@@ -7,8 +7,11 @@
 	<name>PIMS Parent</name>
 	<packaging>pom</packaging>
 	<modules>
-		<module>../pims-web</module>
+		<module>../pims-common</module>
+		<module>../pims-vo</module>
 		<module>../pims-data</module>
+		<module>../pims-service</module>
+		<module>../pims-web</module>
 	</modules>
 
 	<profiles>
@@ -34,7 +37,22 @@
 			<!-- pims dependencies -->
 			<dependency>
 				<groupId>com.comakeit.pims</groupId>
+				<artifactId>pims-common</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.comakeit.pims</groupId>
+				<artifactId>pims-vo</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.comakeit.pims</groupId>
 				<artifactId>pims-data</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.comakeit.pims</groupId>
+				<artifactId>pims-service</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 
@@ -89,6 +107,32 @@
 				<artifactId>spring-security-web</artifactId>
 				<version>${spring-security.version}</version>
 				<scope>runtime</scope>
+			</dependency>
+
+			<!-- Spring Data JPA -->
+			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-jpa</artifactId>
+				<version>${spring-data-jpa.version}</version>
+			</dependency>
+
+			<!-- Hibernate -->
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-core</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-entitymanager</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+
+			<!-- Database -->
+			<dependency>
+				<groupId>org.postgresql</groupId>
+				<artifactId>postgresql</artifactId>
+				<version>${postgresql.version}</version>
 			</dependency>
 
 			<!--Logging -->
@@ -197,6 +241,9 @@
 	<properties>
 		<spring.version>4.2.5.RELEASE</spring.version>
 		<spring-security.version>4.1.0.RELEASE</spring-security.version>
+		<spring-data-jpa.version>1.8.2.RELEASE</spring-data-jpa.version>
+		<hibernate.version>5.1.0.Final</hibernate.version>
+		<postgresql.version>9.4.1207</postgresql.version>
 		<slf4j.version>1.7.7</slf4j.version>
 		<commons-logging.version>1.2</commons-logging.version>
 		<javax-servlet.version>3.0.1</javax-servlet.version>
