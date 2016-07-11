@@ -16,7 +16,7 @@
 
 	<context:annotation-config />
 
-	<jpa:repositories base-package="com.comakeit.pims.data.repository"
+	<jpa:repositories base-package="com.comakeit.pims"
 		entity-manager-factory-ref="pimsEntityManagerFactory"
 		transaction-manager-ref="pimsTransactionManager" />
 

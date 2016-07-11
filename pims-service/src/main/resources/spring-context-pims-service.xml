@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:aop="http://www.springframework.org/schema/aop"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
 	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
 	http://www.springframework.org/schema/mvc 
 	http://www.springframework.org/schema/mvc/spring-mvc.xsd
 	http://www.springframework.org/schema/context 
@@ -11,6 +12,8 @@
 	http://www.hazelcast.com/schema/spring
 	http://www.hazelcast.com/schema/spring/hazelcast-spring-3.1.xsd">
 
-	<context:component-scan base-package="com.comakeit.pims.service" />
+	<context:component-scan base-package="com.comakeit.pims" />
 	<context:annotation-config />
+
+	<bean id="beanMapper" class="org.dozer.spring.DozerBeanMapperFactoryBean" />
 </beans>
